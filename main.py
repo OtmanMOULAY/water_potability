@@ -7,7 +7,7 @@ app = FastAPI(
     description = "prediction water potability"
 )
 
-with open("C:/Users/otman/OneDrive/Desktop/MLOPS/model.pkl","rb") as f : 
+with open("model.pkl","rb") as f : 
     model = pickle.load(f)
 
 @app.get("/")
